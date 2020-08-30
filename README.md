@@ -213,9 +213,9 @@ DELIMITER ;
 
 It is important that all data entries are entered using the application.<br />
 Data entered manually with mysql will result in errors.<br />
-For the creating an account, once the page loads go to the 'login' tab and there will be a link that redirects<br />
-you to a 'register' page and from there an account should be created.
-Please add all data with 'Admin Management' nav-link.<br />
+For the creating an account, once the application loads, click the 'register' nav-link to take you to the 'register' page and from there an account should be created.<br />
+Likewise, in order to login clikc the 'login' nav-link to take you to the 'login' page and then you can login from there. <br />
+Please add enter data with 'Admin Management' nav-link.<br />
 as for the blog author and tags feel free to pick tags and authors of your choosing!
 #### ***Entry 1***
 * **TITLE:** I’m not sure I’ll be Inter manager next season – Conte <br />
