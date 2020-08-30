@@ -6,7 +6,7 @@ import DB from "../../db";
 const router = express.Router();
 
 const checkRole: RequestHandler = (req: any, res, next) => {
-    if (!req.user || req.user.role !== "admin" || req.user.role !== "member")
+    if (!req.user || req.user.role !== "admin")
         return res.sendStatus(401);
     else next();
 };
