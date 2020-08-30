@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { json } from "../../utils/api";
 import { Link, RouteComponentProps } from "react-router-dom";
 import * as $ from "jquery";
-import { Blog, JumbotronText } from "../App";
 import Container from "react-bootstrap/Container";
 
 import Card from "react-bootstrap/Card";
@@ -11,6 +10,7 @@ import Col from "react-bootstrap/Col";
 import SuccessAlertModal from "../modal/SuccessAlertModal";
 
 import Row from "react-bootstrap/Row";
+import {Blog} from "../App";
 
 interface AllBlogsProps extends RouteComponentProps<any> {}
 
@@ -30,14 +30,7 @@ const AllBlogs: React.FC<AllBlogsProps> = (props) => {
     const handleClose = () => setSucShow(false);
     const handleShow = () => setSucShow(true);
 
-    const jumbotronText: JumbotronText = {
-        header: "Well, this is a little awkward...",
-        body: [
-            "It seems like you have not uploaded any blogs to your timeline, ",
-            "click the button below to start blogging!",
-        ],
-        button: true,
-    };
+
     let setBlogs = (bool: boolean) => {
         setBlogsBool(bool);
     };
