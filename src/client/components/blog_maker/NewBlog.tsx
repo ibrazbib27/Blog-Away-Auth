@@ -493,7 +493,7 @@ const NewBlog: React.FC<NewBlogProps> = (props) => {
         localStorage.getItem("role") === "admin" ? (
             <>
                 <Jumbotron
-                    style={{ backgroundColor: "lightgrey" }}
+                    style={{ backgroundColor: "lightgrey", marginTop: "2.0rem" }}
                     className="text-center d-flex align-items-stretch shadow-lg zoom p-0 border border-dark text-dark"
                 >
                     <Form
