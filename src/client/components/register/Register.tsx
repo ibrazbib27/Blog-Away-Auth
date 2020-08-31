@@ -398,7 +398,7 @@ const Register: React.FC<RegisterProps> = (props) => {
           userid: result.userid,
           role: result.role,
         });
-        if (result.role === "admin") {
+        if (result.role !== null) {
           props.history.replace({
             pathname: "/",
             state: {
