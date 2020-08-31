@@ -12,7 +12,7 @@ export interface ModalProps extends RouteComponentProps<any> {
 const WarningAlertModal: React.FC<ModalProps> = (props) => {
     return (
         <>
-            <Modal show={props.open_mod} onHide={props.close_func}>
+            <Modal show={props.open_mod} onHide={props.close_func} className={"text-center"}>
                 <WarningAlert
                     open_alert={props.open_mod}
                     close_func={props.close_func}
